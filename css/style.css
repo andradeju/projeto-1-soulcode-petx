@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
+body{
+    font-family: 'Questrial', sans-serif;
+    width: 100%;
+    height: 100vh;
+    background: #f6f9ff;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    margin: 0 auto;
+    position: relative;
+    box-shadow: 0px 4px 4px 0px rgb(63 63 63 / 27%);
+}
+
+header .inicio {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0 auto;
+    width: 100%;
+    background-color: white;
+}
+
+.menu {
+    list-style-type: none;
+    text-align: left;
+    word-spacing: 30px;
+    padding: 18px;     
+}
+
+.menu-item-link {
+    color: gray;
+    text-decoration: none;
+}
+
+.menu-item {
+    display: inline;
+}
+
+h1 {
+    color: #ff4081;
+    font-style: bold solid;
+    font-size: 40px;
+}
+
+.textoprincipal{
+    font-weight: 500;
+    font-size: large;
+    max-width: 450px;
+    color: #434343;
+    padding: 24px;
+    margin-bottom: 32px;
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+article .cards{
+    padding: 32px;
+}
+
+section .card img {
+    width: 240px;
+    height: 230px;
+}
+
+article .cards section.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 8px;
+    max-height: 240px;
+    padding: 24px;
+    margin-bottom: 32px;
+}
+
+h2{
+    justify-content: center;
+    font-size: 25px;
+    font-style: bold solid;
+    text-align: center;
+}
+
+article.cards section.card button {
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    border-radius: 32px;
+    border: 0;
+    cursor: pointer;
+    font-size: 80%;
+    font-weight: 500;
+    background: linear-gradient(to right, #FE5F8F, #FFC7D9);
+    box-shadow: 20px 20px 50px -30px;
+}
+
+article.cards section.card p {
+    font-weight: 300;
+    padding: 5px;
+    margin-bottom: 15px;
+}
+
+.produtostotal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    margin: auto;
+    padding: 24px;
+}
+
+.infos{
+    display: inline-block;
+    align-items: center;
+    width: 100%;
+    padding: 24px;
+    margin-bottom: 32px;
+    box-shadow: 0px 4px 4px 0px rgb(63 63 63 / 27%);
+}
+
+footer nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+footer nav ul li  {
+    padding: 12px;
+}
+
+li {
+    list-style-type: none;
+}
+
+
+
+
+
+
