@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Petx | Tudo para o seu pet</title>
     <link rel="stylesheet" href="/petx/css/style.css">
+    <script src="/petx/script.js" defer></script>
+    <title>Petx | Tudo para o seu pet</title>
 </head>
 <body>
     <header>
@@ -26,13 +27,28 @@
         </div>
     </header>
     <main>
+        <div class="container-slider">
+            <button id="prev-button"><img src="/petx/image/arrow.png" alt="prev-button"></button>
+            <div class="container-images">
+                <img class="slider" src="/petx/image/adoravel-cachorro-branco-isolado-em-amarelo.jpg" alt="Imagem Dog Mais Lindo do Planeta">
+                <img class="slider" src="/petx/image/vista-frontal-de-um-lindo-cachorro-com-espaco-de-copia.jpg" alt="Imagem Dog Fofo">
+                <img class="slider on" src="/petx/image/lindo-retrato-de-cachorro.jpg" alt="Imagem Filhotes Dogs">
+                </div>
+                <button id="next-button"><img src="/petx/image/arrow.png" alt="next-button"></button>
+                </div>
         <section class="textoprincipal">
         <div>
             <h1>Tudo para o seu Pet</h1>
             <p> Sabemos o quanto seu animalzinho é importante, 
                 por isso não medimos esforços para oferecer o que  
                 há de melhor. Temos rações, acessórios, medicamentos  
-                e brinquedos.</p>
+                e brinquedos. Além disso, valorizamos a sustentabilidade 
+                e o respeito ao meio ambiente, por isso selecionamos produtos 
+                eco-friendly e biodegradáveis, e adotamos práticas que reduzem 
+                nosso impacto ambiental.
+                Aqui na Petx, acreditamos que cada animal é único e merece cuidados 
+                especiais. Por isso, estamos sempre buscando novas formas de melhorar 
+                nossos serviços e oferecer uma experiência inesquecível para você e seu pet</p>
         </div>
     </section>
     <section>
@@ -43,21 +59,20 @@
             <section class="card">
                 <h3>Ração</h3>
                 <img src="/petx/image/racao.jfif" alt="saco racao">
-                <p>Lorem ipsum dolor sit amet, consectetur 
-                    adipisicing elit. Porro aperiam sunt quo similique, 
-                    dolorum consectetur inventore ipsam, officiis neque natus  
-                    eius harum alias quidem. Possimus
-                    nobis in inventore tenetur asperiores.</p>
+                <p>Ração Especial Golden Premium. Fórmula para cães 
+                filhotes de pequeno porte. Pelagem mais bonita e saudável. 
+                Ajuda na saúde intestinal; 
+                Sabor Arroz com batata Doce. 20kg
+                </p>
                 <button>Comprar produto</button>
             </section>
             <section class="card">
                 <h3>Antipulgas</h3>
                 <img src="/petx/image/antipulga.jfif" alt="antipulga">
-                <p>Lorem ipsum dolor sit amet, consectetur  
-                    adipisicing elit. Porro aperiam sunt quo similique,
-                    dolorum consectetur inventore ipsam, officiis neque natus 
-                    eius harum alias quidem. Possimus
-                    nobis in inventore tenetur asperiores.</p>
+                <p>Antipulgas e Carrapatos. Indicado para cães. Acaba com a 
+                    infestação de carrapatos e pulgas. Rápida ação. Efeito 
+                    prolongado por 12 semanas. Comprimidos mastigáveis. Disponível 
+                    em embalagem com 1 comprimido de 250 mg. </p>
                 <button>Comprar produto</button>
             </section>
             <section class="card">
@@ -71,41 +86,85 @@
             </section>
         </article>
         <section class="produtostotal">
-            <div>
-                <h3 id="caes">Produtos para Cães</h3>
-                <h3>Guias</h3>
-                <img src="/petx/image/images.jfif" alt="">
-                <img src="/petx/image/images.jfif" alt="">
-                <img src="/petx/image/images.jfif" alt="">
-                <h3>Peitorais</h3>
-                <img src="/petx/image/peitorais.jfif" alt="">
-                <img src="/petx/image/peitorais.jfif" alt="">
-                <img src="/petx/image/peitorais.jfif" alt="">
+            <h3 id="caes">Produtos para Cães</h3>
+            <h3>Guias e Peitorais</h3>
+            <div class="container-prod">
+                    <div class="prod">
+                    <img src="/petx/image/images.jfif" alt="guiacachorro">
+                    <p class="preco">R$ 280,00</p>
+                </div>
+                <div class="prod">
+                    <img src="/petx/image/images.jfif" alt="guiacachorro">
+                    <p class="preco">R$ 175,00</p>
+                </div>
+                <div class="prod">
+                    <img src="/petx/image/images.jfif" alt="guiacachorro">
+                    <p class="preco">R$ 149,00</p>
+                </div>
+                <div class="prod">
+                    <img src="/petx/image/peitoral.png" alt="coleiracachorro">
+                    <p class="preco">R$ 159,00</p>
+                </div>
+                <div class="prod">
+                    <img src="/petx/image/peitorais.jfif" alt="coleiracachorro">
+                    <p class="preco">R$ 149,00</p>
+                </div>
             </div>
-            <div>
                 <h3 id="gatos">Produtos para Gatos</h3>
-                <h3>Arranhadores</h3>
-                <img src="/petx/image/arranhadores.png" width="250" alt="">
-                <img src="/petx/image/arranhadores.png" width="250" alt="">
-                <img src="/petx/image/arranhadores.png" width="250" alt="">
-                <h3>Camas</h3>
-                <img src="/petx/image/camas.png" width="250" alt="">
-                <img src="/petx/image/camas.png" width="250" alt="">
-                <img src="/petx/image/camas.png" width="250" alt="">
-            </div>
-            <div>
+                <h3>Arranhadores e Camas</h3>
+                <div class="container-prod2">
+                    <div class="prod2">
+                        <img src="/petx/image/arranhadores.png" alt="arranhador">
+                        <p class="preco">R$ 120,00</p>
+                    </div>
+                    <div class="prod2">
+                        <img src="/petx/image/arranhadores.png" alt="arranhador">
+                        <p class="preco">R$ 120,00</p>
+                    </div>
+                    <div class="prod2">
+                        <img src="/petx/image/arranhadores.png" alt="arranhador">
+                        <p class="preco">R$ 100,00</p>
+                    </div>
+                    <div class="prod2">
+                        <img src="/petx/image/camas.png" alt="camagato">
+                        <p class="preco">R$ 200,00</p>
+                    </div>
+                    <div class="prod2">
+                        <img src="/petx/image/camas.png" alt="camagato">
+                        <p class="preco">R$ 200,00</p>
+                    </div>    
+                    <div class="prod2">
+                        <img src="/petx/image/camas.png" alt="camagato">
+                        <p class="preco">R$ 220,00</p>
+                    </div>
+                </div>   
                 <h3 id="outros">Outros Produtos</h3>
-                <img src="/petx/image/brinquedos.png" width="250" alt="">
-                <img src="/petx/image/gravata.png" width="250" alt="">
-                <img src="/petx/image/comedouro.png" width="250" alt="">
-            </div>
+                <div class="container-prod3">
+                    <div class="prod3">
+                        <img src="/petx/image/brinquedos.png" width="250" alt="brinquedo">
+                        <p class="preco">R$ 35,00</p>
+                    </div>
+                    <div class="prod3">
+                        <img src="/petx/image/gravata.png" width="250" alt="gravata">
+                        <p class="preco">R$ 10,00</p>
+                    </div>
+                    <div class="prod3">
+                        <img src="/petx/image/comedouro.png" width="250" alt="comedouro">
+                        <p class="preco">R$ 90,00</p>
+                    </div> 
+                </div>
         </section>
     </section>
     <section class="infos">
+        <div class="info">
             <h3>Formas de Pagamento</h3>
-                <img src="/petx/image/bandeiras-cartoes-de-credito-png.png" width="230" alt="">
+            <img src="image/formadepgto.png" width="220" alt="imagemcartões">
+        </div>
+        <div class="info">
             <h3>Redes Sociais</h3>
-                <img src="/petx/image/redessociais.png" alt="">
+                <img src="/petx/image/redes.png" width="200" alt="redessociais">
+        </div>
+            
     </section>
     </main>
     <footer>
@@ -124,7 +183,7 @@
                     </ul>
                 </nav>
             </div>     
-            <p>&copy; 2023 - Petx Todos os direitos reservados.</p>
+            <p>&copy; 2023 - Petx Todos os direitos reservados | Petx Center Corporation Ltda. </p>
     </footer>
 </body>
 </html>
